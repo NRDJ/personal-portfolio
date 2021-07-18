@@ -74,20 +74,16 @@ header .profile img {
     border: 8px solid #2c2f3f;
 }
 
-
 nav {
 	padding: 30px 0 0 0;
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
+	margin-left: 20px;
 }
 
 nav a {
-	padding: 12px 15px;
-	margin-bottom: 8px;
-	font-size: 15px;
+	display: block;
+	padding: 12px 0;
+	color: white;
+	transition: 0.3s;
 }
 
 header .social-media-icons a {
@@ -98,10 +94,12 @@ header .social-media-icons a {
 	margin-right: 4px;
 	padding: 10px;
 	border-radius: 50%;
+	transition: 0.4s;
 }
 
-header .social-media-icons a:hover{
+header a:hover {
 	background: #149ddd;
 	color: #fff;
 	text-decoration: none;
+	transform: scale(1.05);
 }
