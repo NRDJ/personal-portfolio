@@ -51,14 +51,38 @@ table {
 
 /* Roboto Mono */
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     color: #272829;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
 }
 
 h1 {
 	font-size: 24px;
 	font-weight: 600;
+}
+
+.hero-name {
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 56px;
+}
+
+.hero-container {
+	color:white;
+	margin-bottom: 220px;
+	margin-right: 50px;
+}
+
+
+.hero-container p {
+	font-size: 26px;
 }
 
 
@@ -109,8 +133,8 @@ header a:hover {
 	transform: scale(1.05);
 }
 
-.hero-section {
-	background-image: url(imgs/valentin-wallet-s1Iq2bRoR6Q-unsplash.jpg);
+.hero {
+	background-image: url(imgs/modified_christopher-gower-m_HRfLhgABo-unsplash.jpg);
 	width: 100%;
 	height: 100vh;
 	background-size: cover;
