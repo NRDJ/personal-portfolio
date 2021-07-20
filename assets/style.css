@@ -51,14 +51,38 @@ table {
 
 /* Roboto Mono */
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     color: #272829;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
 }
 
 h1 {
 	font-size: 24px;
 	font-weight: 600;
+}
+
+.hero-name {
+	font-size: 64px;
+	font-weight: 700;
+	line-height: 56px;
+}
+
+.hero-container {
+	color:white;
+	margin-bottom: 220px;
+	margin-right: 50px;
+}
+
+
+.hero-container p {
+	font-size: 26px;
 }
 
 
@@ -109,8 +133,8 @@ header a:hover {
 	transform: scale(1.05);
 }
 
-.hero-section {
-	background-image: url(imgs/valentin-wallet-s1Iq2bRoR6Q-unsplash.jpg);
+.hero {
+	background-image: url(imgs/modified_christopher-gower-m_HRfLhgABo-unsplash.jpg);
 	width: 100%;
 	height: 100vh;
 	background-size: cover;
@@ -118,7 +142,6 @@ header a:hover {
 }
 
 /* ABOUT */
-
 .container {
 	max-width: 1320px;
 }
@@ -162,8 +185,12 @@ main {
 
 /* Skills */
 
-.skills {
+.skills, .portfolio {
 	background: #f5f8fd;
+}
+
+.progress-bar {
+	height: 10px;
 }
 
 /* resume */
@@ -208,4 +235,77 @@ main {
 
 .resume-item ul {
 	list-style-type: disc;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel-indicators li {
+	background-color: #173B6C;
+	height: 15px;
+	width: 40px;
+}
+
+.portfolio .carousel .carousel-inner img {
+	padding-left: 20px;
+	transition: 0.4s;
+
+}
+
+.portfolio .carousel .carousel-inner img:hover {
+	transform: scale(1.05);
+}
+
+/* contact */
+
+.contact .info {
+    padding: 30px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .info i {
+    font-size: 20px;
+    color: #149ddd;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #dff3fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+    background: #149ddd;
+    color: #fff;
+}
+
+.contact .php-email-form {
+    width: 100%;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .php-email-form button[type="submit"] {
+    background: #149ddd;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
 }
