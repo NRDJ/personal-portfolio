@@ -69,9 +69,18 @@ h1 {
 }
 
 .hero-name {
-	font-size: 64px;
+	font-size: 56px;
 	font-weight: 700;
 	line-height: 56px;
+}
+
+@media only screen and (max-width: 1400px) {
+	
+	.hero-name {
+		font-size: 50px;
+		font-weight: 700;
+		line-height: 56px;
+	}
 }
 
 .hero-container {
@@ -115,6 +124,7 @@ nav a {
 	transition: 0.3s;
 }
 
+
 header .social-media-icons a {
 	display: inline-block;
 	background: #212431;
@@ -140,6 +150,7 @@ header a:hover {
 	background-size: cover;
 	background-attachment: fixed;
 }
+
 
 /* ABOUT */
 .container {
@@ -258,6 +269,7 @@ main {
 
 .portfolio .carousel .carousel-inner img {
 	padding-left: 20px;
+	padding-right: 20px;
 	transition: 0.4s;
 
 }
@@ -309,3 +321,62 @@ main {
     transition: 0.4s;
     border-radius: 4px;
 }
+
+
+
+@media only screen and (max-width: 1200px) {
+
+	header {
+		width: 75px;
+		padding: 0 10px;
+	}
+
+	main {
+		margin-left: 75px;
+	}
+
+	nav {
+		margin: 15px;
+		padding-top: 0;
+	}
+
+	nav a {
+		padding: 0;
+		color: white;
+		transition: 0.3s;
+	}
+
+	nav ul i {
+		font-size: 25px;
+		margin-top: 20px;
+	}
+
+	header {
+		padding: 0;
+		margin: 0;
+	}
+
+	nav {
+		padding: 0;
+		margin: 0;
+	}
+
+	.social-media-icons a {
+		margin-right: 0;
+		padding: 0 15px;
+	}
+
+	header a:hover {
+		transform: scale(1);
+	}
+
+}
+
+@media only screen and (max-width: 992px) {
+	.container {
+		max-width: 720px;
+	}
+
+	
+}
+
