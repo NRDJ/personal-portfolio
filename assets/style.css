@@ -74,14 +74,6 @@ h1 {
 	line-height: 56px;
 }
 
-@media only screen and (max-width: 1400px) {
-	
-	.hero-name {
-		font-size: 50px;
-		font-weight: 700;
-		line-height: 56px;
-	}
-}
 
 .hero-container {
 	color:white;
@@ -322,6 +314,16 @@ main {
     border-radius: 4px;
 }
 
+nav ul li {
+	border-bottom: 1px solid #dee2e634;
+}
+
+@media only screen and (max-width: 1400px) {
+	
+	.hero-name {
+		font-size: 50px;
+	}
+}
 
 
 @media only screen and (max-width: 1200px) {
@@ -329,6 +331,11 @@ main {
 	header {
 		width: 75px;
 		padding: 0 10px;
+	}
+
+	header .profile img {
+		width: 65px;
+		border: 4px solid #2c2f3f;
 	}
 
 	main {
@@ -377,6 +384,63 @@ main {
 		max-width: 720px;
 	}
 
-	
+	.hero-name {
+		font-size: 44px;
+	}
+
+
+
 }
+
+
+
+@media only screen and (max-width: 768px) {
+
+	.hero-name {
+		font-size: 28px;
+	}
+
+	.container {
+		max-width: 540px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+
+	.container {
+		max-width: 100%;
+
+	}
+
+	header {
+		width: 50px;
+	}
+
+	main {
+		margin-left: 50px;
+	}
+
+	nav {
+		margin: 0;
+	}
+
+	nav a {
+		padding: 0;
+	}
+
+	.social-media-icons a {
+		font-size: 13px;
+	}
+
+	nav ul i {
+		font-size: 20px;
+		margin-top: 20px;
+	}
+
+
+}
+
+
+
+
 
